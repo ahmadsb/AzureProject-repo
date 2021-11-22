@@ -1,6 +1,6 @@
 
 # import the config env file
-. ./Variables.ps1
+. ./../Variables.ps1
 
 
 # ======== AUX Functions =======
@@ -11,7 +11,7 @@ function Update-ResourceGroup {
   foreach ($template in $templates) {
     New-AzResourceGroupDeployment `
       -Name VMStorageTemplate `
-      -ResourceGroupName "myResourceGroup" `
+      -ResourceGroupName $MyResourceGroup `
       -TemplateFile $template
   }
 }
@@ -22,7 +22,7 @@ Set-AzContext -Subscription $SubscriptionID
 
 # create resource group 
 New-AzResourceGroup `
-  -Name "myResourceGroup" `
+  -Name $MyResourceGroup `
   -Location $ResourceGroupLocation
 # add an ARM templates to resource group 
 Update-ResourceGroup $templates
