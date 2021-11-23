@@ -11,6 +11,7 @@
   "parameters": {
     "adminUsername": {
       "type": "string",
+      "defaultValue": "ahmad",
       "metadata": {
         "description": "Username for the Virtual Machine."
       }
@@ -18,6 +19,7 @@
     "adminPassword": {
       "type": "secureString",
       "minLength": 12,
+       "defaultValue": "audi_%10018T99",
       "metadata": {
         "description": "Password for the Virtual Machine."
       }
@@ -100,6 +102,13 @@
       "defaultValue": "simple-vm",
       "metadata": {
         "description": "Name of the virtual machine."
+      }
+    },
+    "resourceGroupName": {
+      "type": "string",
+      "defaultValue": "myResourceGroup",
+      "metadata": {
+        "description": "Name of the resourceGroup."
       }
     }
   },

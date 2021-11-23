@@ -1,6 +1,6 @@
 $SubscriptionID = "a8108c2b-496c-424d-8347-ecc8afb6384c"
 $ResourceGroupLocation = "Central US"
-[string[]]$templates = "./armTemplates/StorageAccount.json", "./armTemplates/WinVM.json" 
+[string[]]$templates = "../armTemplates/StorageAccount.json", "../armTemplates/WinVM.json" 
 $MyResourceGroup = "myResourceGroup"
 
 #  connect to my VM
