@@ -4,7 +4,7 @@ to create an ARM template and script to create, upload and copy blobs from stora
 main.ps1:
     is a script to run all subs scripts 
 >> pwsh main.ps1
-but before run main.ps1 please use same username and password in variables.ps1 file
+but before run main.ps1 
 
 
 we have three script 
